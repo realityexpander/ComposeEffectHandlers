@@ -18,6 +18,8 @@ import com.example.composeeffecthandlers.remember_coroutine_scope.RememberCorout
 import com.example.composeeffecthandlers.ui.theme.ComposeEffectHandlersTheme
 import kotlinx.coroutines.delay
 
+// from https://www.youtube.com/watch?v=gxWcfz3V2QE
+
 class MainActivity : ComponentActivity() {
 
     private var i = 0

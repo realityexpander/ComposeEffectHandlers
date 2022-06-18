@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.mapNotNull
 
 // similar to flow.collectAsState() but opposite
 
-// A snapshotFlow converts a Compose state to a flow that can be collected by a coroutine
+// A snapshotFlow converts a Compose State to a flow that can be collected by a coroutine
 
 @Composable
 fun SnapshotFlowDemo() {
