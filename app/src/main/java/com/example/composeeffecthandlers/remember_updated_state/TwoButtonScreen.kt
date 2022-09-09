@@ -12,6 +12,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 
+// RememberUpdatedState gets the latest value of a state variable even after the composition has started.
+
+// https://proandroiddev.com/jetpack-compose-side-effects-iii-rememberupdatedstate-c8df7b90a01d
+
 @Composable
 fun TwoButtonScreen() {
     var buttonColour by remember {
@@ -79,7 +83,8 @@ fun Timer2(
     val timerDuration = 5000L
     println("Composing timer with colour : $buttonColour")
 
-    // Will always get the latest value of buttonColour via rememberUpdatedState
+    // Will always get the latest value of buttonColour via rememberUpdatedState, even after
+    //   LaunchedEffect has started (and not cancelled due to a new value as its not possible with Unit)
     val buttonColorUpdated by rememberUpdatedState(newValue = buttonColour)
 
     LaunchedEffect(key1 = Unit, block = {
