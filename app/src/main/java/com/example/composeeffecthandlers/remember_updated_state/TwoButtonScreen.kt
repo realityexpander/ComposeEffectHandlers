@@ -45,10 +45,10 @@ fun TwoButtonScreen() {
             Text("Black Button")
         }
 
-        // This will *NOT* update latest value when the button colour changes
+        // This will *NOT* update latest value of buttonColor when the button colour changes
         //Timer(buttonColor = buttonColour)
 
-        // This *WILL* update latest value when the button colour changes by using rememberUpdatedState
+        // This *WILL* update latest value of buttonColor when the button colour changes by using rememberUpdatedState
         Timer2(buttonColour = buttonColour)
     }
 }

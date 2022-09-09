@@ -62,6 +62,7 @@ class MainActivity : ComponentActivity() {
                 //////////////////////////////////////
                 // another rememberUpdatedState demo
                 TwoButtonScreen()
+                //////////////////////////////////////
 
             }
         }
